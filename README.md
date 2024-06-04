@@ -4,16 +4,17 @@
 
 ## Overview 
 
-This repository contains code for training and sampling denoising diffusion probabilistic model for satellite and handwritten digits image generation. The project aims at (1) testing the architecture, hyparameters of diffusion models to create realistic images based on a limited amount of training images, and (2) Investigating the power of a foundation model that has been trained on large corpus of unlabeled satellite image datasets.  
+This repository contains code for training and sampling denoising diffusion probabilistic model for satellite and handwritten digits image generation. The project aims at (1) testing the architecture, noise schedule and hyparameters of diffusion models to create realistic images based on a limited amount of training images, and (2) Investigating the power of a pre-trained "foundation" model that were trained on a large corpus of unlabeled satellite image datasets.  
 
 
 ## Project Structure
 
-- model/ : Contains the definition of the CNN architecture used for 1D MT inversion. The directory also stores the trained models. 
-- core/ : Includes source code files for data preprocessing, model training, evaluation, and utilities.
+- config/ : Contains the *.json files that defines diffusion model architecture, beta schedule, path to training data and all relevant training parameters
 - datasets/ : Placeholder directory for storing training images.
-- experiments/ : Placeholder directory for storing the results of the training and sampling experiments
+- experiments/ : Placeholder directory for storing the trained models, the results of the training and sampling experiments
 - report/ : contains the report
+- model/ : Contains the pytorch implementation of the "sr3-type" diffusion model (See reference repository below). 
+- data/ :  Contains utilities and image pre-processing routines
 
 ## Reproducibility
 
@@ -22,7 +23,7 @@ This repository contains code for training and sampling denoising diffusion prob
 
 ## References
 
-The PyTorch implementation of "sr3-type" diffusion models was adapted from the codes copied from these two repositories:
+The PyTorch implementation of "sr3-type" diffusion models was adapted from these two repositories:
 - https://github.com/wgcban/ddpm-cd/tree/master#51-download-the-change-detection-datasets
 - https://github.com/lucidrains/denoising-diffusion-pytorch
 
