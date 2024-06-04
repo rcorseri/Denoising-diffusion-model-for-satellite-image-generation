@@ -3,9 +3,12 @@
 ### Author: R. Corseri
 
 ## Overview 
+This repository contains code for training and sampling denoising diffusion probabilistic models  for generating satellite and handwritten digit images. The project has two main objectives:
 
-This repository contains code for training and sampling denoising diffusion probabilistic model for satellite and handwritten digits image generation. The project aims at (1) testing the architecture, noise schedule and hyparameters of diffusion models to create realistic images based on a limited amount of training images, and (2) Investigating the power of a pre-trained "foundation" model that were trained on a large corpus of unlabeled satellite image datasets.  
+- Testing the architecture, noise schedule, and hyperparameters of diffusion models to create realistic images based on a limited amount of training images.
+- Investigating the power of a pre-trained "foundation" model that was trained on a large corpus of unlabeled satellite image datasets.
 
+The experiments demonstrate the potential of DDPMs in generating high-quality images and explore their practical applications, including change detection in satellite imagery. Despite computational challenges, the use of pre-trained models highlights the accessibility and effectiveness of advanced generative capabilities for broader scientific and remote sensing applications.
 
 ## Project Structure
 
