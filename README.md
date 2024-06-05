@@ -12,10 +12,10 @@ The experiments demonstrate the potential of DDPMs in generating high-quality im
 
 ## Project Structure
 
+- report/ : contains the report
 - config/ : Contains the *.json files that defines diffusion model architecture, beta schedule, path to training data and all relevant training parameters
 - datasets/ : Placeholder directory for storing training images.
 - experiments/ : Placeholder directory for storing the trained models, the results of the training and sampling experiments
-- report/ : contains the report
 - model/ : Contains the pytorch implementation of the "sr3-type" diffusion model (See reference repository below). 
 - data/ :  Contains utilities and image pre-processing routines
 
